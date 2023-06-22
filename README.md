@@ -23,6 +23,9 @@ A multi-country ecommerce template built with Commerce Layer, Next.js, Sanity st
 
 ---
 
+
+
+
 ## Template Features
 
 - A user-friendly and performant ecommerce storefront (with products, categories, i18n, cart, checkout, etc.) built with TypeScript, Nextjs, [Commerce Layer React Components](https://github.com/commercelayer/commercelayer-react-components) library, and Tailwind CSS.
@@ -123,7 +126,26 @@ yarn global add @commercelayer/cli
 
 ```bash
 cl applications:login -o <organizationSlug> -i <clientId> -s <clientSecret> -a <applicationAlias>
+cl applications:login -o funkarah-pk-cl -i eKR3yHq0OU5rZE2QMzwMJBDNdgxEwsVJFFJSLWJ4Lz8 -s tByrBZ3J2cANAdXuCzPZNVFid01Y2-yFtSuCn3Z0W4M -a cli
+# ----- Template UI ------
+BUILD_LANGUAGES=en-US,it-IT,fr-FR
+BUILD_CMS=sanity
+NEXT_PUBLIC_SITE_NAME=funkarah-pk-scl
+NEXT_PUBLIC_SITE_URL=https://funkarah-pk-scl.netlify.app/
+
+# ----- Commerce Layer ------
+CL_CLIENT_ID=CP8ndme2BPcSxaiwPhW5BgDvVhzDWqHu8NhljlvBev8
+CL_ENDPOINT=https://funkarah-pk-cl.commercelayer.io
+
+# ----- Sanity Studio ------
+NEXT_PUBLIC_SANITY_PROJECT_TITLE=funkarah.pk-cl
+
+NEXT_PUBLIC_SANITY_PROJECT_ID=83bxzm2t
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_API_VERSION=v2022-08-25
+NEXT_PUBLIC_SANITY_TOKEN=skyziJz3LOELfsuOP0o99u6oNgPu0AQMvJZHkJrBiXRXwLXh5nlmIr5juX0d3Zo5pQd4yPcX4ce0MyjfvwBmZmje1RyXeF1aqvAUXTNlmnp7bR1PzHX3BjP76wFJlq74IgpoOPOy5iYg6UYENrhO6Mei5iM7S8Wesbr7vCke4j9GMUjyAClH
 ```
+
 
 7. Install the [seeder plugin](https://github.com/commercelayer/commercelayer-cli-plugin-seeder/blob/main/README.md) using the command below:
 
